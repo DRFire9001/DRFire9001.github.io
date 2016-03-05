@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<style>
+a:link{text-decoration:none;}
+h1{font-weight:normal;}
+.contentarea{width:715px; height:600px; margin-left:404px; margin-top:-4px; border:1px solid black; background-color:#ffffff; box-shadow:4px 4px 8px #666666; border-radius:3px;}
+.footer {padding:8px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;width:906px; border:1px solid black; margin-left:215px; margin-top:-1px; text-align:center; border-radius:3px; background-color:#ffffff; box-shadow:4px 4px 8px #666666;}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="../css/headerStyle.css" type="text/css"> <!--Header CSS-->
+	<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+	<link href='../dist/simplelightbox.min.css' rel='stylesheet' type='text/css'>
+	<link href='../demo.css' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/meugscanalslider.css"/>
+<title> Galeria | Anne Beauty </title>
+</head>
+
+<body background="../background.jpg">
+ 
+<div id='cssmenu' >
+<ul>
+   <li class='active'><a href='../index'><span>Home</span></a></li>
+   <li class='has-sub'><a href='#'><span>Promoções</span></a>
+      <ul>
+         <li><a href='../acrigel'><span>AcriGel</span></a></li>
+         <li><a href='../banhoemgel'><span>Banho em Gel</span></a></li>
+		 <li><a href='../unhas-em-gel'><span>Unhas em Gel</span></a></li>
+		 <li><a href='../decoradas'><span>Unhas em Gel Decoradas</span></a></li>
+		 <li><a href='../estiletto'><span>Stiletto</span></a></li>
+         <li class='last'><a href='../manicure'><span>Manicure|Pedicure</span></a></li>
+      </ul>
+   </li>
+   <li class='active'><a href='../galeria'><span>Galeria</span></a></li>
+   <li class='has-sub'><a href='#'><span>Informações</span></a>
+      <ul>
+	     <li><a href='../contato'><span>Contato</span></a></li>
+		 <li class='last'><a href='../locale'><span>Localização</span></a></li>
+	  </ul>
+   </li>
+</ul>
+</div> 
+
+ <!-- Load .js here-->
+        <script src="../js/jQuery_min.js"/></script>
+        <script src="../js/jquery.cycle2.js"/></script>										
+        <script src="../js/jQuery_Cycle2.swipe.js"/></script>
+        <script src="../js/jquery.cycle2.shuffle.js"/></script>
+        <script src="../js/jquery.cycle2.tile.js"/></script>
+		
+
+  <div class='container'>
+
+	<h1 class="align-center">Home Page | Anne Beauty</h1>	
+        <!--<div class="gallery"> -->
+		
+		<!-- Add Banners here -->
+			<div class="cycle-slideshow" style="margin-left:8px; margin-top:0px; width:700px;"
+	        data-cycle-swipe="true"
+            data-cycle-swipe-fx="scrollHorz"
+            data-cycle-fx="tileSlide"
+            data-cycle-speed="800"
+	        data-cycle-timeout="5000"
+	        data-cycle-slides="> a"
+	        >
+			  <div class="cycle-prev"></div>
+              <div class="cycle-next"></div>
+			   <a href="javascript:void(0)"><img src="../images/banner/Banner1.jpg" width="720" height="200" alt="Slide 1"/></a>
+			   <a href="../unhas-em-gel.html" target="_blank"><img src="../images/banner/Banner2.2.jpg" width="720" height="200" alt="Slide 2"/></a>
+			   <a href="../decoradas.html" target="_blank"><img src="../images/banner/07-12-2015.jpg" width="720" height="200" alt="Slide 3"/></a>
+			   <a href="../unhas-em-gel.html" target="_blank"><img src="../images/banner/20-02-2015.jpg" width="720" height="200" alt="Slide 4"/></a> 				
+            </div>
+				<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FAnneBeautyEstetica%3Fskip_nax_wizard%3Dtrue&amp;width=300&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=true" scrolling="yes" frameborder="0" style="border:none; overflow:scroll; width:700px; height:350px; margin-top: 10; margin-left: 9px; box-shadow:2px 2px 4px #666666;" allowTransparency="true"></iframe>
+
+
+        <!--</div>-->
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="../dist/simple-lightbox.js"></script>
+<script>
+	$(function(){
+		var gallery = $('.gallery a').simpleLightbox();
+	});
+</script> 
+</body></html>
