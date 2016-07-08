@@ -31,6 +31,22 @@ html, body {
 	padding: 0;
 	margin: 0;
 }
+/* line 8, ../sass/demo.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/demo.scss */
+a {
+  color: #4ab19a;
+}
+
+/* line 16, ../sass/demo.scss */
+.clear {
+  clear: both;
+  float: none;
+  width: 100%;
+}
 
 .container {
   max-width: 1170px;
