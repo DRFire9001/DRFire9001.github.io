@@ -27,7 +27,24 @@ img.bg {
 
 html, body {
     height: 100%;
+	font-family: 'Slabo 27px', serif;
+	padding: 0;
+	margin: 0;
 }
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.align-center {
+  text-align: center;
+}
+
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
@@ -160,3 +177,6 @@ h1{font-weight:normal;}
   -moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
 }
+                                                                              /* GALERIA */
+																			  
+
