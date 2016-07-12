@@ -218,13 +218,39 @@ h1{font-weight:normal;}
     height: auto;
     width: auto\9; /* ie8 */
 	float: right;
+	position: relative;
 }
-#headercont{
-	background:url(header.png);  
-	background-repeat:no-repeat; 
-	background-size: contain;
-	 max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-	float: right;
+#logo{
+	
+	position: absolute;
+	
+	width: 800px;
+	
+}
+
+                                                                    /* MEDIA QUERIES */
+@media screen and (max-width: 800px) {  /* SCREEN SMALLER THAN 800px */
+		
+		#logo{
+			
+			width: 600px;
+		}
+}
+@media screen and (max-width: 600px) {  /* SCREEN SMALLER THAN 600px */
+		
+		#logo{
+			
+			width: 400px;
+		}
+}
+@media screen and (max-width: 500px) {  /* SCREEN SMALLER THAN 500px */
+		
+		#logo{
+			
+			width: 300px;
+		}
+		#cssmenu {
+			
+			font-size: 9px;
+		}
 }
