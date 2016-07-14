@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title> Anne Beauty Estética </title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="css/styles_compilation.css" type="text/css">   <!-- Imports compiled base stylesheet -->
+</head>
+
+<body>
+
+<script> 
+	function scrollingDiv(documentID) {
+		var container = document.getElementById('panel1'); 
+		
+		var scrollTo = document.getElementById(documentID);
+		container.scrollTop = scrollTo.offsetTop - '500';
+	}
+</script>
+
+<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+<img src="images/background.jpg" class="bg">
+<link rel="stylesheet" href="css/jquery-ui.css" type="text/css"/> <!--JQuery UI CSS-->	
+<script src="js/jQuery_min.js" type="text/javascript"/></script><!--JQuery javaScript-->
+<script src="js/jquery-ui.min.js" type="text/javascript"/></script><!--JQuery UI javaScript-->	
+<link rel="stylesheet" href="css/minimenu.css" type="text/css">
+
+<div class="page-wrap">
+   <img id= "header"  src= "css/header_clean.png" />
+   <img id= "logo"  src= "css/logo.png" />
+	<div id='cssmenu' >
+		<ul>
+			<li class='active'><a href='index'><span>Home</span></a></li>
+
+			<li class='active'><a href='galeria'><span>Galeria</span></a></li>
+   
+			<li class='has-sub'><a href='#'><span>Informações</span></a>
+				<ul>
+					<li><a href='contato'><span>Contato</span></a></li>
+					<li class='last'><a href='locale'><span>Localização</span></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div> 
+
+	<div class='container'>
+		<br>                           <!-- space between Menu and main Body -->
+		<h1 class="align-center"> Olá, sejam bem vindos à Anne Beauty!</h1>
+			
+									Confira nossas Promoções abaixo, deixem seu 
+									like em nossa página do Facebook, ou entre 
+									em Contato conosco.	
+									
+
+		<h2 class="align-left"> Promoções </h2>
+		
+		<div id='minimenu' style= "  font-size: 9px; z-index:1; " >
+						<ul style="">
+							<li class='active'><a href='javascript:scrollingDiv("box1")' ><span>Unhas em Gel</span></a></li>
+							<li class='active'><a href='javascript:scrollingDiv("box2")'><span>Decoradas</span></a></li>
+							<li class='active'><a href='javascript:scrollingDiv("box3")'><span>AcriGel</span></a></li>
+							<li class='active'><a href='javascript:scrollingDiv("box4")'><span>Stiletto</span></a></li>
+							<li class='active'><a href='javascript:scrollingDiv("box5")'><span>Banho em Gel</span></a></li>
+							<li class='active'><a href='javascript:scrollingDiv("box6")'><span>Manicure/Pedicure</span></a></li>
+						</ul>
+		</div> 
+	            
+				<div id="panel1" class="text" style="clear:both; text-align:center; height:435px;width:auto; max-width: 400px; box-shadow:2px 2px 4px #666666; border-radius:3px; border:1px solid #ccc;font:16px 'Slabo 27px'; overflow:auto; background: rgba(255,255,255,0.5);"> <!-- Verdana -->
+				
+					
+                    <!--JQuery Button Script-->	<script> $(document).ready(function(){$('#btn').button();}); </script>
+					<div id="box1" style="border:1px solid #ccc;">
+
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font  >Unhas em Gel</font></big></big></big></p>
+							<img src="images/pages/ueg.jpeg" alt="Unhas em Gel" style="width: auto; max-width:330px;"/>
+							<p><b>Promoção Especial Anne Beauty:</b> Unhas em Gel + 1 manutenção, apenas R$150,00! <b>Para pagamento online apenas!</b></br> OU </br> Unhas em Gel, de R$180 por R$115. Pagamento presencial. Entre em Contato e agende seu horário!</p>
+							<!-- INSERT BUTTON HERE! -->
+							<div id='btn'>
+								<table>
+									<tr>
+										<td><a href="pag01.html"> Faça seu <br>Pagamento Online!<br></a></td>
+									</tr>
+								</table>
+							</div>
+							<p></p>
+					</div>
+					
+					<div id="box2" style="border:1px solid #ccc;">
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font>Unhas em Gel Decoradas</font></big></big></big></p>
+							<img src="images/pages/decoradas_2.jpg" alt="Unhas em Gel" style="width: auto; max-width:330px;"/>
+							<p> <b>Promoção: </b> Unhas em Gel decoradas e personalizadas a partir de <b>R$150</b>! <br> Aproveite essa incrível oferta e agende seu horário. </p>
+					</div>
+   
+					<div id="box3" style="border:1px solid #ccc;">
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font>AcriGel</font></big></big></big></p>
+							<img src="images/pages/acrigel.jpg" alt="Manicure/Pedicure" style="width: auto; max-width:330px;"/>
+							<p>  <b> Promoção: </b> Unhas AcriGel, de R$200 por apenas <b>R$130</b>! <br> Entre em Contato para mais informações. </p>
+					</div>
+   
+					<div id="box4" style="border:1px solid #ccc;">
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font>Stiletto</font></big></big></big></p>
+							<img src="images/pages/stiletto.jpg" alt="Unhas Decoradas" style="width: auto; max-width:330px;"/>
+							<p> <b> Promoção Anne Beauty: </b> Unhas em Gel pontudinhas (Stiletto) por apenas <b>R$130,00</b>!<br>Agende seu horário!</p>
+					</div>
+   
+					<div id="box5" style="border:1px solid #ccc;">
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font>Banho em Gel</font></big></big></big></p>
+							<img src="images/pages/beg.jpg" alt="Banho em Gel" style="width: auto; max-width:330px;"/>
+							<p> <b>Promoção:</b> Banho em Gel, por apenas <b>R$ 59,90!</b><br>Ao ser colocado sobre as unhas naturais, a aderência é perfeita e o efeito, extraordinário. Venha conferir!<br>Entre em Contato e agende seu horário!</p>
+					</div>
+					
+					<div id="box6" style="border:1px solid #ccc;">
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font>Manicure & Pedicure</font></big></big></big></p>
+							<img src="images/pages/manped.jpg" alt="" style=" width: auto; max-width:330px;"/>
+							<p> <b>Promoção Imperdível</b>: Pacote Pé e Mão, de R$109,00 por apenas R$89,99 mensais!<br> Entre em Contato e agende seu horário!</p>
+					</div>					
+				</div>
+				
+			<h2 class="align-left"> Endereço </h2>
+	 
+				Text here: EX: Hello World!
+	
+		<br><br><br><br><br><br><br>   <!-- space between Footer and main Body -->
+	</div>
+
+</div>
+
+<footer class="footer"> <i>Anne Beauty Estética da Unha ©<br>Rua Itumbiara, 789 &nbsp;&nbsp;Bairro Aparecida<br>Uberlândia / MG<br>(34) 9 9258-2291</i></footer> 
+</body></html>
