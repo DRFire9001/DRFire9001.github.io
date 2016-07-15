@@ -16,9 +16,9 @@
 		var container = document.getElementById('panel1'); 
 		var scrollTo = document.getElementById(documentID);
 		
-		container.style.overflow = 'hidden';
+		container.css('overflow-y', 'hidden');
 		container.scrollTop = scrollTo.offsetTop - '500';
-		container.style.overflow = 'auto';
+		container.css('overflow-y', 'auto');
 	}
 </script>
 
