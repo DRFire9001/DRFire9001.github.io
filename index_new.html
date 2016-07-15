@@ -12,10 +12,13 @@
 
 <script> 
 	function scrollingDiv(documentID) {
-		var container = document.getElementById('panel1'); 
 		
+		var container = document.getElementById('panel1'); 
 		var scrollTo = document.getElementById(documentID);
+		
+		container.style.overflow = 'hidden';
 		container.scrollTop = scrollTo.offsetTop - '500';
+		container.style.overflow = 'auto';
 	}
 </script>
 
