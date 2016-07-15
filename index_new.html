@@ -15,10 +15,11 @@
 		
 		var container = document.getElementById('panel1'); 
 		var scrollTo = document.getElementById(documentID);
+		var target = $('#panel1');
 		
-		container.style.overflow-y = "hidden";
+		 target.css('overflow-y', 'hidden');
 		container.scrollTop = scrollTo.offsetTop - '500';
-		container.style.overflow-y = "auto";
+		target.css('overflow-y', 'auto');
 	}
 </script>
 
