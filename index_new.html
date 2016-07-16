@@ -57,28 +57,21 @@
 			border: 1px solid red;
 		}
 	</style>
-	
 </head>
 
 <body>
-
-
 <script>
-	
 	function jump(h){
-     
 		location.href = "#"+h;
 		location.href = "#"+"menuanchor";	
-		
 	}
 </script>
 
 <link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
 <img src="images/background.jpg" class="bg">
-<link rel="stylesheet" href="css/jquery-ui.css" type="text/css"/> <!--JQuery UI CSS-->	
-<script src="scripts/jQuery_min.js" type="text/javascript"/></script><!--JQuery javaScript-->
-<script src="scripts/jquery-ui.min.js" type="text/javascript"/></script><!--JQuery UI javaScript-->	
 <link rel="stylesheet" href="css/minimenu.css" type="text/css">
+<link rel="stylesheet" href="css/jquery-ui.css" type="text/css"/> <!--JQuery UI CSS-->	
+<script src="scripts/output.min.js" type="text/javascript"/></script><!--JQuery UI javaScript (merged)-->	
 
 <div class="page-wrap">
    <img id= "header"  src= "css/header_clean.png" />
@@ -188,28 +181,18 @@
 
 </div>
 <script type="text/javascript"> 
-	
-	
 	if(navigator.userAgent.match(/iemobile/i)){
-	
 		$('#panel1').removeClass('panel');
 		$('#panel1').addClass('winphone');
-		
 		jQuery('#btn').replaceWith(jQuery('#button'));
 		jQuery('#btn').hide();		
-		
-		
 	}
 	else {
-		if ( $('#panel1').hasClass('winphone') ){
-					
+		if ( $('#panel1').hasClass('winphone') ){	
 			$('#panel1').removeClass('winphone');
 			$('#panel1').addClass('panel');
 		}
 		jQuery('#button').hide();	
-
-		
-
 	}
 </script>
 
