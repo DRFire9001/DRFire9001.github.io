@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/styles_compilation.css" type="text/css">   <!-- Imports compiled base stylesheet -->
 	
 	<style>
-	   .panel1{
+	   .panel{
 		
 				text-align:center; 
 				height:435px;width:auto; 
@@ -37,14 +37,8 @@
 				-webkit-overflow-scrolling: touch;
 		}
 	</style>
-	<script> 
-	
-	
-	if(navigator.userAgent.match(/iemobile/i)){
-		document.getElementById("panel1").className = "winphone";
-	}
 
-</script>
+	
 </head>
 
 <body>
@@ -109,7 +103,7 @@
 						</ul>
 		</div> 
 	            
-				<div id="panel1" class="panel1" style="">
+				<div id="panel1" class="panel" style="">
 				
                     <!--JQuery Button Script-->	<script> $(document).ready(function(){$('#btn').button();}); </script>
 					<div id="box1" style="border:1px solid #ccc;">
@@ -168,6 +162,24 @@
 	</div>
 
 </div>
+<script type="text/javascript"> 
+	
+	
+	if(navigator.userAgent.match(/iemobile/i)){
+	
+		$('#panel1').removeClass('panel');
+		$('#panel1').addClass('winphone');
+		
+	}
+	else {
+		if ( $('#panel1').hasClass('winphone') ){
+					
+			$('#panel1').removeClass('winphone');
+			$('#panel1').addClass('panel');
+		}
+
+	}
+</script>
 
 <footer class="footer"> <i>Anne Beauty Estética da Unha ©<br>Rua Itumbiara, 789 &nbsp;&nbsp;Bairro Aparecida<br>Uberlândia / MG<br>(34) 9 9258-2291</i></footer> 
 </body></html>
