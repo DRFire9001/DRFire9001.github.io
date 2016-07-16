@@ -31,9 +31,14 @@
 
 	function jump(h){
       
-	    var url = location.href; <!-- Removes # from link -->
+	    
 		location.href = "#"+h;
-		location.href = "#"+"menuanchor";	  
+		location.href = "#"+"menuanchor";	
+		var hash = location.hash.replace('#', ''); <!-- Removes # from link -->
+    if(hash != ''){
+        // Clear the hash in the URL
+        location.hash = '';
+    }		
 	}
 </script>
 
