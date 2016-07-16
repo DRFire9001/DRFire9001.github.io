@@ -15,15 +15,9 @@
 		
 		var container = document.getElementById('panel1'); 
 		var scrollTo = document.getElementById(documentID);
-		var body = document.body;
-        	var docElem = document.documentElement;
-        	var scrollTop = window.pageYOffset || docElem.scrollTop || body.scrollTop;
-		
-		container.style.overflow-y = 'hidden';
 	
 		container.scrollTop = scrollTo.offsetTop - '500';
-		
-		container.style.overflow-y = 'auto';
+
 	
 	}
 </script>
