@@ -11,14 +11,20 @@
 <body>
 
 <script> 
-	function scrollingDiv(documentID) {
+	function scrollingDiv() {
 		
-		var container = document.getElementById('panel1'); 
-		var scrollTo = document.getElementById(documentID);
+        <!-- window.scrollTo(0, 0); -->
+		
+		<!-- window.location.href = $('#menuanchor').attr('href'); -->
+		
+		<!-- window.location.hash = '#menuanchorlink'; -->
+		window.location.hash = 'menuanchorlink';
+	}
 	
-		container.scrollTop = scrollTo.offsetTop - '500';
-
-	
+	function jump(h){
+      var url = location.href;               //Save down the URL without hash.
+      location.href = "#"+h;
+	  location.href = "#"+"menuanchor";
 	}
 </script>
 
@@ -58,14 +64,15 @@
 
 		<h2 class="align-left"> Promoções </h2>
 		
-		<div id='minimenu' style= "  font-size: 9px; " >
+		<div id='minimenu' style= "  margin-top: 50px; font-size: 9px; " >
+		                <a name="menuanchor"></a>
 						<ul style="">
-							<li class='active'><a href="#" onclick="scrollingDiv('box1');return false;"><span>Unhas em Gel</span></a></li>
-							<li class='active'><a href="#" onclick="scrollingDiv('box2');return false;"><span>Decoradas</span></a></li>
-							<li class='active'><a href="#" onclick="scrollingDiv('box3');return false;"><span>AcriGel</span></a></li>
-							<li class='active'><a href="#" onclick="scrollingDiv('box4');return false;"><span>Stiletto</span></a></li>
-							<li class='active'><a href="#" onclick="scrollingDiv('box5');return false;"><span>Banho em Gel</span></a></li>
-							<li class='active'><a href="#" onclick="scrollingDiv('box6');return false;"><span>Manicure/Pedicure</span></a></li>
+							<li class='active'><a onclick="jump('box1')"><span>Unhas em Gel</span></a></li>
+							<li class='active'><a onclick="jump('box2');"><span>Decoradas</span></a></li>
+							<li class='active'><a onclick="jump('box3');"><span>AcriGel</span></a></li>
+							<li class='active'><a onclick="jump('box4');"><span>Stiletto</span></a></li>
+							<li class='active'><a onclick="jump('box5');"><span>Banho em Gel</span></a></li>
+							<li class='active'><a onclick="jump('box6');"><span>Manicure/Pedicure</span></a></li>
 						</ul>
 		</div> 
 	            
@@ -74,7 +81,7 @@
 					
                     <!--JQuery Button Script-->	<script> $(document).ready(function(){$('#btn').button();}); </script>
 					<div id="box1" style="border:1px solid #ccc;">
-
+                        <a name="box1"></a>
 							<p style="text-align:left; padding-left: 15px;"><big><big><big><font  >Unhas em Gel</font></big></big></big></p>
 							<img src="images/pages/ueg.jpeg" alt="Unhas em Gel" style="width: auto; max-width:330px;"/>
 							<p><b>Promoção Especial Anne Beauty:</b> Unhas em Gel + 1 manutenção, apenas R$150,00! <b>Para pagamento online apenas!</b></br> OU </br> Unhas em Gel, de R$180 por R$115. Pagamento presencial. Entre em Contato e agende seu horário!</p>
@@ -90,6 +97,7 @@
 					</div>
 					
 					<div id="box2" style="border:1px solid #ccc;">
+					    <a name="box2"></a>
 							<p style="text-align:left; padding-left: 15px;"><big><big><big><font>Unhas em Gel Decoradas</font></big></big></big></p>
 							<img src="images/pages/decoradas_2.jpg" alt="Unhas em Gel" style="width: auto; max-width:330px;"/>
 							<p> <b>Promoção: </b> Unhas em Gel decoradas e personalizadas a partir de <b>R$150</b>! <br> Aproveite essa incrível oferta e agende seu horário. </p>
