@@ -29,14 +29,20 @@
 <script src="scripts/overflow-android.min.js"></script>
 
 <script> 
-	OverflowAndroid.enable = true;
-	var element = document.getElementById('panel1');
-    new OverflowAndroid(element);
+
 	
 	function jump(h){
       var url = location.href;               //Save down the URL without hash.
-      location.href = "#"+h;
-	  location.href = "#"+"menuanchor";
+
+	  if(navigator.userAgent.indexOf('Android') >= 0){
+		OverflowAndroid.enable = true;
+	    var element = document.getElementById('panel1');
+        new OverflowAndroid(element);
+	  }
+	  else{
+		location.href = "#"+h;
+		location.href = "#"+"menuanchor";	  
+	  }
 	}
 </script>
 
