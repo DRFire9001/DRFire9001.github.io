@@ -5,12 +5,25 @@
 	<title> Anne Beauty Estética </title>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
+	<script src="https://maps.googleapis.com/maps/api/js"></script> <!--Google Maps script-->
+<script> <!-- Google Maps javaScript-->
+  function initialize(){
+  var myLatlng = new google.maps.LatLng(-18.906805, -48.270546);
+  var mapOptions = {zoom: 17,center: myLatlng}
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+  });}
+ google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 	<style>
 	   .panel{
 		
 				text-align:center; 
-				height:435px;width:auto; 
+				height:435px;
+				width:auto; 
 				max-width: 400px; 
 				box-shadow:2px 2px 4px #666666;
 				border-radius:3px; 
@@ -20,6 +33,18 @@
 				background: rgba(255,255,255,0.5);
 				overflow: auto;
 				-webkit-overflow-scrolling: touch;
+				float:left;
+				padding-bottom:100px;
+		}
+		.panel2{
+		
+				width:auto;
+				min-width:300px;
+				max-width: 400px;
+				height:435px;
+				background: rgba(255,255,255, 0.5);
+				overflow: auto;
+				float: left;		
 		}
 		.winphone{
 		
@@ -55,6 +80,19 @@
 			background-color: #85b3e2;
 			border: 1px solid red;
 		}
+		.fc {
+		
+			border:none; 
+			float:left; 
+			overflow:auto; 
+			width: auto;
+			max-width:400px;
+			height:435px;
+			box-shadow:2px 2px 4px #666666; 
+			margin-left: 20px;
+			margin-right: 10px;
+		}
+		#map-canvas{width:auto; max-width:400px; height:290px;}
 	</style>
 </head>
 
@@ -175,14 +213,40 @@
 					</div>					
 				</div>
 				
-			<h2 class="align-left"> Endereço </h2>
-	 
-				Text here: EX: Hello World!
+				<!-- <h2 class="align-left;"> Facebook </h2> -->
+				<div class="fc">
+				<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FAnneBeautyEstetica%3Fskip_nax_wizard%3Dtrue&amp;width=300&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=true" ></iframe>
+				</div>
+				
+				
+				<!-- <h2 > Informações </h2> -->
+				<div class="panel2" style="position:relative; ">
+					<div style="background: #ffffff; height:40px; text-align: center; padding: 6px; "> Informações</div>
+					<div style="border:1px solid #ccc; padding-left: 10px;">
+							<p style="text-align:left; "><big><big><big><font  >Contato</font></big></big></big></p>
+							<p> <b>Tel:</b> &nbsp; (34) 9 9258-2291  &nbsp; <img src="images\wha_new.png" alt="facebook" style="width:20px; height:20px;"/> </p>
+							<p><b>Facebook:</b> /AnneBeautyEstetica &nbsp; <a href ="https://www.facebook.com/AnneBeautyEstetica?skip_nax_wizard=true" target="_blank"> <img src="faceicon.png" alt="facebook" style="width:20px; height:20px;"/> </a> </p>
+							<p><b> Email: </b> annesipple@hotmail.com </p>
+							
+					</div>
+					<div style="border:1px solid #ccc; padding-left: 10px;">
+							<p style="text-align:left; "><big><big><big><font>Localização</font></big></big></big></p>
+							<p> Nos localizamos no seguinte endereço: </p>
+							<p style="text-align: center;"> Rua Itumbiara, 475 <br/> Bairro Nossa Senhora Aparecida <br/> Uberlândia/MG </p>
+							
+							<div id="map-canvas" style=""></div>
+							
+					</div>
+							
+				
+				</div>
+				
 	
 		<br><br><br><br><br><br><br>   <!-- space between Footer and main Body -->
 	</div>
 
 </div>
+
 <script type="text/javascript"> 
 	if(navigator.userAgent.match(/iemobile/i)){
 		$('#panel1').removeClass('panel');
@@ -198,6 +262,6 @@
 		jQuery('#button').hide();	
 	}
 </script>
-
+<div style="clear:both;"> <br><br><br><br><br><br><br> </div>  <!-- moves the footer down -->
 <footer class="footer"> <i>Anne Beauty Estética da Unha ©<br>Rua Itumbiara, 789 &nbsp;&nbsp;Bairro Aparecida<br>Uberlândia / MG<br>(34) 9 9258-2291</i></footer> 
 </body></html>
