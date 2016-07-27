@@ -1,1 +1,288 @@
-.container,body,html{font-family:'Slabo 27px',serif}#cssmenu li a,.align-center,.footer{text-align:center}img.bg{min-height:100%;min-width:1920px;width:100%;height:auto;position:fixed;top:0;left:0;z-index:-1}@media screen and (max-width:1024px){img.bg{left:50%;margin-left:-512px}}body,html{height:100%;padding:0;margin:0}.footer,.page-wrap:after{height:100px}*{box-sizing:border-box}a{color:#4ab19a}.clear{clear:both;float:none;width:100%}.container{max-width:1170px;width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.page-wrap{min-height:100%;margin-bottom:-100px}.page-wrap:after{content:"";display:block}.footer{background:#eee6ff;list-style:none;margin:0;padding:8px}a:link{text-decoration:none}h1{font-weight:400}.contentarea{width:715px;height:600px;margin-left:404px;margin-top:-4px;border:1px solid #000;background-color:#fff;box-shadow:4px 4px 8px #666;border-radius:3px}#cssmenu li ul a:hover,#cssmenu li ul li:hover a,#cssmenu ul li:hover a{color:#FFF;text-decoration:none;background:#f2e5ff}#cssmenu{border:none;border:0;margin:0;padding:0;font:67.5% "Lucida Sans Unicode","Bitstream Vera Sans","Trebuchet Unicode MS","Lucida Grande",Verdana,Helvetica,sans-serif;font-size:14px;font-weight:700;width:auto;clear:right}#cssmenu ul{background:#98b2e6;height:50px;list-style:none;margin:0;padding:0;-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:0;-webkit-box-shadow:inset 0 16px 0 0 rgba(255,255,255,.1);-moz-box-shadow:inset 0 16px 0 0 rgba(255,255,255,.1);box-shadow:inset 0 16px 0 0 rgba(255,255,255,.1)}#cssmenu li{float:left;padding:0 0 0 15px}#cssmenu li a{color:#000;display:block;font-weight:400;line-height:50px;margin:0;padding:0 25px;text-decoration:none}#cssmenu li a:hover{background:#fff;color:#FFF;text-decoration:none;-webkit-box-shadow:inset 0 0 7px 2px rgba(0,0,0,.3);-moz-box-shadow:inset 0 0 7px 2px rgba(0,0,0,.3);box-shadow:inset 0 0 7px 2px rgba(0,0,0,.3)}#cssmenu li ul{display:none;height:auto;padding:0;margin:0;border:0;position:absolute;width:200px;z-index:200}#cssmenu li:hover ul{display:block}#cssmenu li li{display:block;float:none;margin:0;padding:0;width:200px;background:#b3b3ff}#cssmenu li:hover li a{background:0 0}#cssmenu li ul a{display:block;height:50px;font-size:12px;font-style:normal;margin:0;padding:0 10px 0 15px;text-align:left}#cssmenu li ul a:hover,#cssmenu li ul li:hover a{border:0;-webkit-box-shadow:inset 0 0 7px 2px rgba(0,0,0,.3);-moz-box-shadow:inset 0 0 7px 2px rgba(0,0,0,.3);box-shadow:inset 0 0 7px 2px rgba(0,0,0,.3)}#header{max-width:100%;height:auto;width:auto\9;float:right;position:relative}#logo{position:absolute;width:800px}@media screen and (max-width:800px){#logo{width:600px}}@media screen and (max-width:600px){#logo{width:400px}::-webkit-scrollbar{width:0;background:0 0}}@media screen and (max-width:500px){#logo{width:300px}#cssmenu{font-size:9px}::-webkit-scrollbar{width:0;background:0 0}}
+              												/* Background Wallpaper */ 
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1920px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
+                                                                               /* Body Style */
+
+html, body {
+    height: 100%;
+	font-family: 'Slabo 27px', serif;
+	padding: 0;
+	margin: 0;
+}
+/* line 8, ../sass/demo.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 12, ../sass/demo.scss */
+a {
+  color: #4ab19a;
+}
+
+/* line 16, ../sass/demo.scss */
+.clear {
+  clear: both;
+  float: none;
+  width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Slabo 27px', serif;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+    margin-bottom: -100px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+    height: 100px; 
+}
+.footer{ 
+  background: #eee6ff; 
+  height: 100px;
+  list-style: none;
+  text-align:center;
+  margin: 0;
+  padding: 8px;
+
+  }
+  
+a:link{text-decoration:none;}
+h1{font-weight:normal;}
+.contentarea{width:715px; height:600px; margin-left:404px; margin-top:-4px; border:1px solid black; background-color:#ffffff; box-shadow:4px 4px 8px #666666; border-radius:3px;}
+
+
+                                                                                /* MENU STYLE */    
+
+/* #F93 */
+/* #C60 */
+#cssmenu {
+  border: none;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  font: 67.5% "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: auto;
+  clear: right
+}
+#cssmenu ul {
+  background: #98b2e6; /*Changes main colour */
+  height: 50px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 0px;
+  -webkit-box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0px 16px 0px 0px rgba(255, 255, 255, 0.1);
+}
+#cssmenu li {
+  float: left;
+  padding: 0px 0px 0px 15px;
+}
+#cssmenu li a {
+  color: #000;
+  display: block;
+  font-weight: normal;
+  line-height: 50px;
+  margin: 0px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+#cssmenu li a:hover {
+  background: #ffffff;
+  color: #FFFFFF;
+  text-decoration: none;
+  -webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+}
+#cssmenu ul li:hover a {
+  background: #f2e5ff; /* changes hover main colour*/
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#cssmenu li ul {
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  width: 200px;
+  z-index: 200;
+}
+#cssmenu li:hover ul {
+  display: block;
+}
+#cssmenu li li {
+  display: block;
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  background: #b3b3ff; /*Dropdown menu colour */
+  /*this is where the rounded corners for the dropdown disappears*/
+
+}
+#cssmenu li:hover li a {
+  background: none;
+}
+#cssmenu li ul a {
+  display: block;
+  height: 50px;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
+}
+#cssmenu li ul a:hover,
+#cssmenu li ul li:hover a {
+  border: 0px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: #f2e5ff; /* Dropdown menu hover colour */
+  -webkit-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 7px 2px rgba(0, 0, 0, 0.3);
+}
+                                                                              
+
+                                                                               /* HEADER */
+#header{
+	
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+	float: right;
+	position: relative;
+}
+#logo{
+	
+	position: absolute;
+	
+	width: 800px;
+	
+}
+.header-facebook{  /* facebook box title header*/ 
+		
+			margin-top:-125px; 
+			margin-left:-315px;
+			display: inline-block;
+}
+.header-info{      /* info box title header*/
+			
+			margin-top:-125px;
+			margin-left:-300px;
+			display: inline-block;
+}
+
+                                                                    /* MEDIA QUERIES */
+@media screen and (max-width: 800px) {  /* SCREEN SMALLER THAN 800px */
+		
+		#logo{
+			
+			width: 600px;
+		}
+		.header-facebook{
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
+		.header-info{ 
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
+}
+
+@media screen and (max-width: 600px) {  /* SCREEN SMALLER THAN 600px */
+		
+		#logo{
+			
+			width: 400px;
+		}
+		
+		::-webkit-scrollbar {
+			width: 0px;  /* remove scrollbar space */
+			background: transparent;  /* optional: just make scrollbar invisible */
+		}
+		.header-facebook{
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
+		.header-info{ 
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
+@media screen and (max-width: 500px) {  /* SCREEN SMALLER THAN 500px */
+		
+		#logo{
+			
+			width: 300px;
+		}
+		#cssmenu {
+			
+			font-size: 9px;
+		}
+		::-webkit-scrollbar {
+			width: 0px;  /* remove scrollbar space */
+			background: transparent;  /* optional: just make scrollbar invisible */
+		}
+		.header-facebook{
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
+		.header-info{ 
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
+}

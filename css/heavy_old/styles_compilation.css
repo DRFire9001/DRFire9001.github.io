@@ -208,6 +208,18 @@ h1{font-weight:normal;}
 	width: 800px;
 	
 }
+.header-facebook{  /* facebook box title header*/ 
+		
+			margin-top:-125px; 
+			margin-left:-315px;
+			display: inline-block;
+}
+.header-info{      /* info box title header*/
+			
+			margin-top:-125px;
+			margin-left:-300px;
+			display: inline-block;
+}
 
                                                                     /* MEDIA QUERIES */
 @media screen and (max-width: 800px) {  /* SCREEN SMALLER THAN 800px */
@@ -216,7 +228,18 @@ h1{font-weight:normal;}
 			
 			width: 600px;
 		}
+		.header-facebook{
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
+		.header-info{ 
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
 }
+
 @media screen and (max-width: 600px) {  /* SCREEN SMALLER THAN 600px */
 		
 		#logo{
@@ -228,7 +251,16 @@ h1{font-weight:normal;}
 			width: 0px;  /* remove scrollbar space */
 			background: transparent;  /* optional: just make scrollbar invisible */
 		}
-}
+		.header-facebook{
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
+		.header-info{ 
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
 @media screen and (max-width: 500px) {  /* SCREEN SMALLER THAN 500px */
 		
 		#logo{
@@ -243,4 +275,14 @@ h1{font-weight:normal;}
 			width: 0px;  /* remove scrollbar space */
 			background: transparent;  /* optional: just make scrollbar invisible */
 		}
+		.header-facebook{
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
+		.header-info{ 
+			margin-top:0;
+			margin-left:0;
+			display:block;
+        }
 }
