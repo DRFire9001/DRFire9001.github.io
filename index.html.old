@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title> Anne Beauty Estética </title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="https://maps.googleapis.com/maps/api/js"></script> <!--Google Maps script-->
+<script> <!-- Google Maps javaScript-->
+  function initialize(){
+  var myLatlng = new google.maps.LatLng(-18.906805, -48.270546);
+  var mapOptions = {zoom: 17,center: myLatlng}
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+  });}
+ google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+	<style>
+	   .panel{
+		
+				text-align:center; 
+				height:435px;
+				width:auto; 
+				max-width: 400px; 
+				box-shadow:2px 2px 4px #666666;
+				border-radius:3px; 
+				border:1px solid #ccc;
+				font:16px 'Slabo 27px'; 
+
+				background: rgba(255,255,255,0.5);
+				overflow: auto;
+				-webkit-overflow-scrolling: touch;
+				float:left;
+				padding-bottom:100px;
+		}
+		.panel2{
+		
+				width:auto;
+				min-width:300px;
+				max-width: 400px;
+				height:435px;
+				background: rgba(255,255,255, 0.5);
+				overflow: auto;
+				float: left;		
+		}
+		.winphone{
+		
+				text-align:center; 
+				height:435px;width:auto; 
+				max-width: 400px; 
+				box-shadow:2px 2px 4px #666666;
+				border-radius:3px; 
+				border:1px solid #ccc;
+				font:16px 'Slabo 27px'; 
+
+				background: #ffffff;
+				overflow: auto;
+				-webkit-overflow-scrolling: touch;
+		}
+		
+		.button {
+			background-color: #85b3e2;
+			border: 1px white;
+			color: black;
+			padding: 15px 32px;
+			text-align: center;
+			margin:0 auto;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			cursor: pointer;
+			
+			border-radius: 15px;
+		}
+
+		.button:hover {
+			background-color: #85b3e2;
+			border: 1px solid red;
+		}
+		.fc {
+		
+			border:none; 
+			float:left; 
+			overflow:auto; 
+			width: auto;
+			max-width:400px;
+			height:435px;
+			box-shadow:2px 2px 4px #666666; 
+			margin-left: 20px;
+			margin-right: 10px;
+		}
+		#map-canvas{width:auto; max-width:400px; height:290px;}
+		
+	</style>
+</head>
+
+<body>
+
+<script>
+	function jump(h){
+		location.href = "#"+h;
+		location.href = "#"+"menuanchor";	
+	}
+</script>
+
+<link rel="stylesheet" href="css/styles_compilation.css" type="text/css">   <!-- Imports compiled base stylesheet -->
+<img src="images/background.jpg" class="bg">
+<link rel="stylesheet" href="css/jquery-ui.css" type="text/css"/> <!--JQuery UI CSS-->	
+<script src="scripts/output.min.js" type="text/javascript"/></script><!--JQuery UI javaScript (merged)-->	
+
+<div class="page-wrap">
+   <img id= "header"  src= "css/header_clean.png" />
+   <img id= "logo"  src= "css/logo.png" />
+	<div id='cssmenu' >
+		<ul>
+			<li class='active'><a href='index'><span>Home</span></a></li>
+
+			<li class='active'><a href='galeria'><span>Galeria</span></a></li>
+   
+			<li class='has-sub'><a href='#'><span>Informações</span></a>
+				<ul>
+					<li><a href='contato'><span>Contato</span></a></li>
+					<li class='last'><a href='locale'><span>Localização</span></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div> 
+    
+	<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'> <!-- font loading -->
+	
+	<div class='container'>
+		<br>                           <!-- space between Menu and main Body -->
+		<h1 class="align-center"> Olá, sejam bem vindos à Anne Beauty!</h1>
+			
+									Confira nossas Promoções abaixo, deixem seu 
+									like em nossa página do Facebook, ou entre 
+									em Contato conosco.	
+									
+
+		<h2 class="align-left"> Promoções </h2>
+		
+		<link rel="stylesheet" href="css/minimenu.css" type="text/css">  <!-- MiniMenu loading -->
+		
+		<!-- <h2 style="display: inline" class="align-left"> Promoções </h2> -->
+		
+		<div id='minimenu' style= "  margin-top: 50px; font-size: 9px; " >
+		                <a name="menuanchor"></a>
+						<ul style="">
+							<li class='active'><a onclick="jump('box1')"><span>Unhas em Gel</span></a></li>
+							<li class='active'><a onclick="jump('box2')"><span>Decoradas</span></a></li>
+							<li class='active'><a onclick="jump('box3');"><span>AcriGel</span></a></li>
+							<li class='active'><a onclick="jump('box4');"><span>Stiletto</span></a></li>
+							<li class='active'><a onclick="jump('box5');"><span>Banho em Gel</span></a></li>
+							<li class='active'><a onclick="jump('box6');"><span>Manicure/Pedicure</span></a></li>
+						</ul>
+		</div> 
+	            
+				<div id="panel1" class="panel" style="">
+				
+                    <!--JQuery Button Script-->	<script> $(document).ready(function(){$('#btn').button();}); </script>
+					<div id="box1" style="border:1px solid #ccc;">
+                        <a name="box1"></a>
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font  >Unhas em Gel</font></big></big></big></p>
+							<img src="images/pages/ueg.jpeg" alt="Unhas em Gel" style="width: auto; max-width:330px;"/>
+							<p><b>Promoção Especial Anne Beauty:</b> Unhas em Gel + 1 manutenção, apenas R$150,00! <b>Para pagamento online apenas!</b></br> OU </br> Unhas em Gel, de R$180 por R$115. Pagamento presencial. Entre em Contato e agende seu horário!</p>
+							<!-- INSERT BUTTON HERE! -->
+							<div id='btn'>
+								<table>
+									<tr>
+										<td><a href="pag01.html"> Faça seu <br>Pagamento Online!<br></a></td>
+									</tr>
+								</table>
+							</div>
+							<div id='button'>
+								
+										<button  class="button">Faça seu <br>Pagamento Online!<br></button>
+										<p style="clear:both">
+								
+							</div>
+							
+							<p></p>
+					</div>
+					
+					<div id="box2" style="border:1px solid #ccc;">
+					    <a name="box2"></a>
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font>Unhas em Gel Decoradas</font></big></big></big></p>
+							<img src="images/pages/decoradas_2.jpg" alt="Unhas em Gel" style="width: auto; max-width:330px;"/>
+							<p> <b>Promoção: </b> Unhas em Gel decoradas e personalizadas a partir de <b>R$150</b>! <br> Aproveite essa incrível oferta e agende seu horário. </p>
+					</div>
+   
+					<div id="box3" style="border:1px solid #ccc;">
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font>AcriGel</font></big></big></big></p>
+							<img src="images/pages/acrigel.jpg" alt="Manicure/Pedicure" style="width: auto; max-width:330px;"/>
+							<p>  <b> Promoção: </b> Unhas AcriGel, de R$200 por apenas <b>R$130</b>! <br> Entre em Contato para mais informações. </p>
+					</div>
+   
+					<div id="box4" style="border:1px solid #ccc;">
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font>Stiletto</font></big></big></big></p>
+							<img src="images/pages/stiletto.jpg" alt="Unhas Decoradas" style="width: auto; max-width:330px;"/>
+							<p> <b> Promoção Anne Beauty: </b> Unhas em Gel pontudinhas (Stiletto) por apenas <b>R$130,00</b>!<br>Agende seu horário!</p>
+					</div>
+   
+					<div id="box5" style="border:1px solid #ccc;">
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font>Banho em Gel</font></big></big></big></p>
+							<img src="images/pages/beg.jpg" alt="Banho em Gel" style="width: auto; max-width:330px;"/>
+							<p> <b>Promoção:</b> Banho em Gel, por apenas <b>R$ 59,90!</b><br>Ao ser colocado sobre as unhas naturais, a aderência é perfeita e o efeito, extraordinário. Venha conferir!<br>Entre em Contato e agende seu horário!</p>
+					</div>
+					
+					<div id="box6" style="border:1px solid #ccc;">
+							<p style="text-align:left; padding-left: 15px;"><big><big><big><font>Manicure & Pedicure</font></big></big></big></p>
+							<img src="images/pages/manped.jpg" alt="" style=" width: auto; max-width:330px;"/>
+							<p> <b>Promoção Imperdível</b>: Pacote Pé e Mão, de R$109,00 por apenas R$89,99 mensais!<br> Entre em Contato e agende seu horário!</p>
+					</div>					
+				</div>
+				
+				
+				<!-- <h2 class="align-left;"> Facebook </h2> -->
+	<div id='header-test'>
+				<h2 id="hdr" class="header-facebook"> Facebook </h2>
+				<div class="fc">
+				<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FAnneBeautyEstetica%3Fskip_nax_wizard%3Dtrue&amp;width=300&amp;height=558&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=true&amp;show_border=true" style="height:435px;"></iframe>
+				</div>
+	</div>
+				
+		<div id='header-test'>		
+			    <h2 id="hdr" class="header-info"> Informações </h2> 
+				<div class="panel2" style="position:relative; ">
+					<!-- <div style="background: #ffffff; height:40px; text-align: center; padding: 6px; "> Informações</div> -->
+					<div style="border:1px solid #ccc; padding-left: 10px;">
+							<p style="text-align:left; "><big><big><big><font  >Contato</font></big></big></big></p>
+							<p> <b>Tel:</b> &nbsp; (34) 9 9258-2291  &nbsp; <img src="images\wha_new.png" alt="facebook" style="width:20px; height:20px;"/> </p>
+							<p><b>Facebook:</b> /AnneBeautyEstetica &nbsp; <a href ="https://www.facebook.com/AnneBeautyEstetica?skip_nax_wizard=true" target="_blank"> <img src="faceicon.png" alt="facebook" style="width:20px; height:20px;"/> </a> </p>
+							<p><b> Email: </b> annesipple@hotmail.com </p>
+							
+					</div>
+					<div style="border:1px solid #ccc; padding-left: 10px;">
+							<p style="text-align:left; "><big><big><big><font>Localização</font></big></big></big></p>
+							<p> Nos localizamos no seguinte endereço: </p>
+							<p style="text-align: center;"> Rua Itumbiara, 789 <br/> Bairro Nossa Senhora Aparecida <br/> Uberlândia/MG </p>
+							
+							<div id="map-canvas" style=""></div>
+							
+					</div>
+							
+				
+				</div>
+		</div>
+				
+	
+		<br><br><br><br><br><br><br>   <!-- space between Footer and main Body -->
+	</div>
+
+</div>
+
+<script type="text/javascript"> 
+	if(navigator.userAgent.match(/iemobile/i)){
+		$('#panel1').removeClass('panel');
+		$('#panel1').addClass('winphone');
+		jQuery('#btn').replaceWith(jQuery('#button'));
+		jQuery('#btn').hide();		
+	}
+	else {
+		if ( $('#panel1').hasClass('winphone') ){	
+			$('#panel1').removeClass('winphone');
+			$('#panel1').addClass('panel');
+		}
+		jQuery('#button').hide();	
+	}
+</script>
+<div style="clear:both;"> <br><br><br><br><br><br><br> </div>  <!-- moves the footer down -->
+<footer class="footer"> <i>Anne Beauty Estética da Unha ©<br>Rua Itumbiara, 789 &nbsp;&nbsp;Bairro Aparecida<br>Uberlândia / MG<br>(34) 9 9258-2291</i></footer> 
+</body></html>
