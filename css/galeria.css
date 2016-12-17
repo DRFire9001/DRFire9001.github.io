@@ -1,6 +1,7 @@
 /* line 1, ../sass/demo.scss */
 html, body {
   font-family: 'Slabo 27px', serif;
+  color: #ffffff;
   padding: 0;
   margin: 0;
 }
@@ -23,7 +24,7 @@ a {
 }
 
 /* line 22, ../sass/demo.scss */
-.container {
+.mainbody {
   max-width: 1170px;
   width: 100%;
   padding-right: 15px;
@@ -32,7 +33,7 @@ a {
   margin-left: auto;
 }
 /* line 32, ../sass/demo.scss */
-.container .gallery a img {
+.mainbody .gallery a img {
   float: left;
   width: 20%;
   height: auto;
@@ -45,7 +46,7 @@ a {
   position: relative;
 }
 /* line 46, ../sass/demo.scss */
-.container .gallery a:hover img {
+.mainbody .gallery a:hover img {
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -o-transform: scale(1.05);
@@ -54,11 +55,12 @@ a {
   z-index: 5;
 }
 /* line 57, ../sass/demo.scss */
-.container .gallery a.big img {
+.mainbody .gallery a.big img {
   width: 40%;
 }
 
 /* line 65, ../sass/demo.scss */
 .align-center {
   text-align: center;
+  font-size: 25px;
 }

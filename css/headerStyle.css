@@ -1,9 +1,0 @@
-@charset "utf-8";body{margin:0px;padding:0px;}
-#header-container{width:100%;height:204px;background-color:transparent;}
-#header{background-image:url(header.png);background-repeat:no-repeat;width:960px;height:200px;margin-left:195px;}
-#logo{float:left;padding-top:15px;padding-left:160px;}
-#slogan{float:right;padding-right:170px;padding-top:35px;}
-img{border:none;}
-#nav{height:76px;width:1024px;padding-top:152px;padding-left:158px;}
-#nav ul{text-align:left;margin:auto;width:1024px;}
-#nav ul li{display:inline;padding:0px;margin:0px;}
