@@ -209,4 +209,8 @@ p.codrops-demos a.current-demo:hover{
 		top: auto;
 		left: auto;
 	}
+	.codrops-top span.left{
+		font-size: 22px;
+	}
+	a[href='#']{ position:absolute; visibility: hidden; display: none; }
 }
