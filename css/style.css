@@ -284,6 +284,12 @@
 	.cb-slideshow li div h3 { font-size: 100px; }
 }
 @media screen and (max-width: 600px) { 
-	.cb-slideshow li div h3 { font-size: 41px; line-height: 50px;  }
-	.cb-slideshow li span { background-size: 100% 80%;     background-repeat: no-repeat;}
+	.cb-slideshow li div h3 { font-size: 41px; line-height: 50px; }
+	.cb-slideshow li span { background-size: 100%;     background-repeat: no-repeat;}
+	.cb-slideshow li:nth-child(1) span { background-image: url(../images/phone/1.jpeg) }
+	.cb-slideshow li:nth-child(2) span { background-image: url(../images/phone/2.jpeg) }
+	.cb-slideshow li:nth-child(3) span { background-image: url(../images/phone/3.jpeg) }
+	.cb-slideshow li:nth-child(4) span { background-image: url(../images/phone/4.jpeg) }
+	.cb-slideshow li:nth-child(5) span { background-image: url(../images/phone/5.jpeg) }
+	.cb-slideshow li:nth-child(6) span { background-image: url(../images/phone/6.jpeg) }
 }
