@@ -23,7 +23,7 @@
     </head>
     <body id="page">
 	
-		<!-- <link rel="stylesheet" type="text/css" href="css/style.css" />	 -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />	
         <ul class="cb-slideshow">
             <li><span>Image 01</span> <div><h3>Unhas em Gel</h3></div></li>
             <li><span>Image 02</span> <div><h3>Faça com quem entende</h3></div></li>
@@ -55,24 +55,6 @@
             </div><!--/ Codrops top bar -->
         </div>
 		
-		
-
-		<noscript id="deferred-styles">
-		  <link rel="stylesheet" type="text/css" href="css/style.css"/>
-		</noscript>
-		<script>
-			var loadDeferredStyles = function() {
-				var addStylesNode = document.getElementById("deferred-styles");
-				var replacement = document.createElement("div");
-				replacement.innerHTML = addStylesNode.textContent;
-				document.body.appendChild(replacement)
-				addStylesNode.parentElement.removeChild(addStylesNode);
-			};
-			var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-			  webkitRequestAnimationFrame || msRequestAnimationFrame;
-			if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-			else window.addEventListener('load', loadDeferredStyles);
-		</script>
 		<script type="text/javascript">
 			function downloadJSAtOnload() {
 			var element = document.createElement("script");
