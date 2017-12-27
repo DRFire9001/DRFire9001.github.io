@@ -1,17 +1,10 @@
 :root {
-  --img1:url(../images/1.jpg);  /*desktop pictures*/
+  --img1:url(../images/1.jpg);
   --img2:url(../images/2.jpg);
   --img3:url(../images/3.jpg);
   --img4:url(../images/4.jpg);
   --img5:url(../images/5.jpg);
   --img6:url(../images/6.jpg);
-  
-  --img1m:url(../images/phone/1.jpg); /*mobile pictures (<=600px)*/
-  --img2m:url(../images/phone/2.jpg);
-  --img3m:url(../images/phone/3.jpg);
-  --img4m:url(../images/phone/4.jpg);
-  --img5m:url(../images/phone/5.jpg);
-  --img6m:url(../images/phone/6.jpg);
 }
 
 .cb-slideshow,
@@ -99,13 +92,10 @@
 .no-cssanimations .cb-slideshow li span{opacity:1;}
 @media screen and (max-width:1140px){.cb-slideshow li div h3{font-size:100px;}
 }
+
+@media screen and (max-height:470px){
+.cb-slideshow li div h3{font-size:80px;line-height:70px;}
+}
 @media screen and (max-width:600px){
 .cb-slideshow li div h3{font-size:41px;line-height:50px;}
 .cb-slideshow li span{background-size:100%;background-repeat:no-repeat;}
-/*.cb-slideshow li:nth-child(1) span{background-image:var(--img1m);}
-.cb-slideshow li:nth-child(2) span{background-image:var(--img2m);}
-.cb-slideshow li:nth-child(3) span{background-image:var(--img3m);}
-.cb-slideshow li:nth-child(4) span{background-image:var(--img4m);}
-.cb-slideshow li:nth-child(5) span{background-image:var(--img5m);}
-.cb-slideshow li:nth-child(6) span{background-image:var(--img6m);}*/
-}
