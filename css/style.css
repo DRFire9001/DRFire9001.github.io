@@ -92,10 +92,10 @@
 .no-cssanimations .cb-slideshow li span{opacity:1;}
 @media screen and (max-width:1140px){.cb-slideshow li div h3{font-size:100px;}
 }
-
 @media screen and (max-height:470px){
 .cb-slideshow li div h3{font-size:80px;line-height:70px;}
 }
 @media screen and (max-width:600px){
 .cb-slideshow li div h3{font-size:41px;line-height:50px;}
 .cb-slideshow li span{background-size:100%;background-repeat:no-repeat;}
+}
