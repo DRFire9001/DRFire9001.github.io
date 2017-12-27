@@ -16,5 +16,5 @@ function remove(array, element) {
 	const index = array.indexOf(element);
 	if (index !== -1) {array.splice(index, 1);}
 }		
-$(document).ready(function () {scramble();//run when page first loads});
-$(window).resize(function () {scramble();//run on every window resize});
+$(document).ready(function () {scramble();}); //run when page first loads
+$(window).resize(function () {scramble();});  //run on every window resize
