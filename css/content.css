@@ -1,7 +1,41 @@
+@font-face{font-family:'CobertRegular'; src:url('fonts/Corbert-Regular.otf') format('truetype');}
+h3 {
+  overflow: hidden;
+  text-align: center;
+}
+
+/* h3:before,
+h3:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h3:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h3:after {
+  left: 0.5em;
+  margin-right: -50%;
+} */
+
+h3{
+	
+	font-size: 22px;
+	text-align:left;
+	margin-bottom:25px;
+}
 .content{
 	
 	min-height: 325px; 
 	max-height: 100%;
+	overflow:hidden;
 	background: rgba(255,255,255,0.85);
 	
 	margin-left: 180px;
@@ -11,6 +45,7 @@
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	
+	font-family:CobertRegular;
 	font-size: 22px;
 	line-height: 30px;
 	color: #000000;
@@ -19,16 +54,62 @@
 	padding-top: 15px;
 	padding-right:12px;
 	padding-bottom:12px;
-	font-style: italic;
+	/*font-style: italic;*/
 }
 
-/* Media Queries */
+hr.vertical {
+	
+	height:350px; /*you might need some positioning for this to work, see other questions about 100% height*/
+    width:1px;
+    border: 0;
+    background: black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 200, from(#000), to(transparent));
+	float:left;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+#img_div{
+	
+	overflow:hidden;
+	float: right;
+}
+#text_div{
+	
+	/*outline: #00FF00 dotted thick;*/ 
+	float:left; 
+	width:50%; 
+	padding-left: 40px; 
+	padding-right:25px; 
+	padding-bottom:25px; 
+	padding-top:25px;
+}
+
 @media screen and (max-width: 1000px) {
 	
 	.content{
-
 		margin-left: 10px;
 		margin-right: 10px;
 		margin-bottom: 10px;
+	}
+
+	#img_div{
+		float:left;
+	}
+}
+@media screen and (min-width:851px){
+	
+	.content{
+		display:flex;
+		align-items: center; /* horizontal */
+	}
+}
+@media screen and (max-width:850px){
+	
+	hr.vertical{
+		width:0px;
+	}
+	#text_div{
+		width:80%;
 	}
 }
