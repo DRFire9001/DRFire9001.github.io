@@ -63,6 +63,8 @@ hr.vertical {
 	margin-bottom:50px;
 }
 
+
+/* Unhas em Gel page variables */
 #img_div{
 	
 	overflow:hidden;
@@ -79,6 +81,26 @@ hr.vertical {
 	padding-top:25px;
 }
 
+/* contact page variables */
+#icons_div{
+		
+	float:left; 
+	width: 100%;  
+	display: block; 
+	margin:auto;
+	margin-bottom:5px;
+}
+#icon_image{
+		
+	width:35px; 
+	height:35px; 
+	float:left; 
+	margin-top:0px; 
+	margin-left:15px;
+}
+
+
+/* Screen Queries - mess :( */
 @media screen and (max-width: 1150px) {
 	
 	.content{
