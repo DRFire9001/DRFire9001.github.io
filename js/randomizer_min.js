@@ -9,7 +9,7 @@ function scramble(){
 		else{
 			document.documentElement.style.setProperty(variable[i], 'url(../images/phone/' + imgs + ')' );
 		}
-		//remove(images, imgs);
+		remove(images, imgs);
 	}	
 }
 function remove(array, element) {
