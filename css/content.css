@@ -85,7 +85,7 @@ hr.vertical {
 	padding-top:25px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1150px) {
 	
 	.content{
 		margin-left: 10px;
@@ -94,20 +94,46 @@ hr.vertical {
 	}
 
 	#img_div{
-		float:left;
+		float:right;
 	}
-}
-@media screen and (min-width:851px){
-	
-	.content{
-		display:flex;
-		align-items: center; /* horizontal */
-	}
-}
-@media screen and (max-width:850px){
 	
 	hr.vertical{
 		width:0px;
+	}
+}
+
+@media screen and (max-width:980px){
+
+	#img_div{
+		float:left;
+	}
+
+}
+
+@media screen and (min-width:851px){
+	
+	hr.vertical{
+		margin-left:20px;
+	}
+
+}
+
+@media screen and (max-width:850px) and (min-width:700px) {
+	
+	#img_div{
+		margin-left:220px;
+	}
+	#text_div{
+		width:80%;
+	}
+}
+
+
+@media screen and (max-width:699px){
+	
+	#img_div{
+		margin-left:50px;
+		float:left;
 	}
 	#text_div{
 		width:80%;
