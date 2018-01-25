@@ -91,5 +91,5 @@ p.codrops-demos a.current-demo:hover{color:#A5727D;background:#6d0019;}
 @media screen and (max-width:767px){.container > header{text-align:center;}
 p.codrops-demos{position:relative;top:auto;left:auto;}
 .codrops-top span.left{font-size:22px;}
-a[href='#']{position:absolute;visibility:hidden;display:none;}
+/* a[href='#']{position:absolute;visibility:hidden;display:none;} */
 }
