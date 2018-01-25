@@ -6,29 +6,37 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>http://www.annebeautyestetica.com/</loc>
-  <lastmod>2017-03-24T19:12:55+00:00</lastmod>
+  <lastmod>2018-01-25T16:02:11+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>http://www.annebeautyestetica.com/index.html</loc>
-  <lastmod>2017-03-24T19:12:55+00:00</lastmod>
+  <lastmod>2018-01-25T16:02:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.annebeautyestetica.com/contact.html</loc>
-  <lastmod>2017-03-24T19:12:55+00:00</lastmod>
+  <lastmod>2018-01-25T16:02:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.annebeautyestetica.com/locale.html</loc>
-  <lastmod>2017-03-24T19:12:55+00:00</lastmod>
+  <lastmod>2018-01-25T16:02:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>http://www.annebeautyestetica.com/galeria.html</loc>
-  <lastmod>2017-03-24T19:12:55+00:00</lastmod>
+  <lastmod>2018-01-25T16:02:11+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>http://www.annebeautyestetica.com/unhas-em-gel.html</loc>
+  <lastmod>2018-01-25T16:02:11+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
 </urlset>
