@@ -1,0 +1,331 @@
+@font-face{font-family:'BebasNeueRegular';src:url('../fonts/CGothic.ttf') format('truetype');}
+@font-face{font-family:'CobertRegular'; src:url('../fonts/Corbert-Regular.otf') format('truetype');}
+@font-face{font-family:'Geomanist'; src:url('../fonts/geomanist-regular-webfont.ttf') format('truetype');}
+@font-face{font-family:'VladmirScript';src:url('../fonts/VladmirScript.ttf') format('truetype');}
+
+html,body{margin:0;padding:0;}
+a:link    {text-decoration:none;}
+
+p{text-align:center;}
+
+h3 {
+  overflow: hidden;
+  text-align: center;
+}
+
+h3:before,
+h3:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+h3:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+h3:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+	.page{
+	
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.page:after{
+		position:fixed;width:100%;height:100%;top:0px;left:0px;z-index:0;
+		content:'';background:transparent url(pattern.png) repeat top left;
+		z-index:-1;
+		-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1))); // fades image;
+	}
+	
+	
+	.container{position:relative;text-align:center;}
+	.clr{clear:both;}
+	.container > header{padding:30px 30px 10px 20px;margin:0px 20px 10px 20px;position:relative;display:block;text-shadow:1px 1px 1px rgba(0,0,0,0.2);text-align:left;}
+	.container > header h1{font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;font-size:48px;line-height:45px;position:relative;font-weight:400;color:#ccccff;text-shadow:2px 2px 1px rgba(0,0,0,1);padding:0px 0px 5px 0px;}
+	.container > header h1 span{}
+	.container > header h2, p.info{
+				font-family: 'VladmirScript';
+				font-size:56px;
+				color:#ffffff;
+				margin-left: 108px;
+				margin-right:100px;
+				margin-top: 0px;
+				margin-bottom: 10px;
+				text-align: center;
+				font-weight:450;
+	}
+	
+	/* Simple Menu Start*/
+	.codrops-top{font-family:'BebasNeueRegular',Arial, sans-serif;font-size:16px;line-height:50px;background:#FDFCEC;opacity:0.9;z-index:9999;position:relative;-moz-box-shadow:1px 0px 2px #ADAC99;-webkit-box-shadow:1px 0px 2px #ADAC99;box-shadow:1px 0px 2px #ADAC99;}
+	.codrops-top a{padding:0px 10px;letter-spacing:1px;color:#794987;display:block;float:left;}
+	.codrops-top a:hover{/* color:#BE9BC9; */}
+	.codrops-top span.right{float:right;text-transform:uppercase; margin-right:100px;}
+	.codrops-top span.right a{float:none;display:inline;}
+	.codrops-top span.right a:hover{font-weight:bold;}     /* sets weight of <span class="right"> links to bold on hover */
+	.codrops-top span.right a:hover strong{color:#BE9BC9;} /* sets colour of <strong> links inside <span class="right"> on hover */
+	.codrops-top span.left{font-family:'VladmirScript', Arial, sans-serif; font-size:35px;}
+	.codrops-top span.left a{display:inline;}
+	.codrops-top span.left a:hover{color:#BE9BC9;} /* sets colour of <span class="left"> links on hover */
+	/* Simple Menu End*/
+
+	/* Hover Menu START */
+	.dropdown {float: left; overflow: hidden;}
+	.dropdown .dropbtn {font-size:16px; border:none; outline:none; color:white; padding:14px 16px; background-color:inherit; font:inherit; margin:0;}
+	.dropdown-content {margin-right: auto; margin-left: auto; display:none; position:absolute; background-color:#f9f9f9; width:100%; max-width:150px; box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2); z-index:1;}
+	.dropdown-content a {float:none; color:black; text-decoration:none; display:block; text-align:left;}
+	.dropdown-content a:hover {background-color:#ddd;}
+	.dropdown:hover .dropdown-content {display: block;}
+	/* Hover Menu END */
+
+	.content{
+	
+		/*background-color:#ffffff;*/
+		background: rgba(255,255,255,0.7);
+		margin-left:150px;
+		margin-right:100px;
+		min-height:350px;
+		overflow:hidden;
+	}
+	
+	hr.vertical {
+	
+		height:350px; /*you might need some positioning for this to work, see other questions about 100% height*/
+		width:1px;
+		border: 0;
+		background: black;
+		background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 200, from(#000), to(transparent));
+		float:left;
+		margin-top:50px;
+		margin-bottom:50px;
+	}
+	
+	.imgbox{
+	
+		margin-left:110px; 
+		margin-right:160px;
+		margin-bottom:15px;
+		margin-top:35px;
+		font-family:'BebasNeueRegular';
+		
+	}
+	
+	.box1{
+
+		
+		margin-left:110px; 
+		float:left;
+		margin-right:160px;
+		margin-bottom:65px;
+		margin-top:15px;
+		font-family:'BebasNeueRegular';
+	}
+	
+	.footer{
+	
+		  position: relative;
+		  right: 0;
+		  bottom: 0;
+		  left: 0;
+		 /* padding: 1rem;*/
+		  padding-top:4px;
+		  padding-bottom: 4px;
+		  padding-left:10px;
+		  padding-right:10px;
+		  max-height:65px;
+		  margin-top:50px;
+		  background-color: #9da3ad;
+		  text-align: center;
+		  font-family:'BebasNeueRegular';
+		  font-size:10px;
+	}
+	
+	.servicebox{
+		
+		margin-left:10px; 
+		margin-right:10px; 
+		margin-top: 10px;
+		margin-bottom: 10px;
+		float: left; 
+		/* max-width: 500px;  */
+		position: relative; 
+		background: rgba(255,255,255,0.7);
+		border-radius: 4px;
+	}
+	.servicebox > h1{
+		
+		font-family: 'VladmirScript';
+		font-size: 35px;
+		text-align: left; 
+		font-weight: 450;
+		margin-left: 10px;
+		margin-right: 10px; 
+	}
+	.servicebox > p{
+		
+		margin-left: 20px;
+		margin-right: 10px;
+		text-align: left; 
+	}
+	
+	#clipart{
+		
+		float:left;
+		margin-top:-90px;
+		width:90px;
+		height:85px;
+	}
+	
+	#clipart2{
+		
+		float:left;
+		margin-top:-65px; 
+		margin-left: 20px; 
+		width:65px; 
+		height:50px;
+	}
+	
+	#icons_div{
+		
+		/* float:left;  */
+		/* width: 100%;   */
+		padding:2px;
+		display: block; 
+		margin:auto;
+	}
+	
+	#spec_icon{
+		
+		float:left;
+	}
+
+	#icon_image{
+		
+		width:60px; 
+		height:50px; 
+		float:left; 
+		margin-top:-16px; 
+		margin-left:15px;
+	}
+	
+	#logo{
+		
+		margin-left:-70px;
+	}
+	
+@media screen and (max-width: 1000px) {
+	
+	.content{
+
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+	.codrops-top span.right{margin-right:10px;}
+	
+	.container > header h2, p.info{
+
+				margin-left: -20px;
+				margin-right:0px;
+	}
+	
+	#logo{
+		
+		margin-left:0px;
+	}
+
+}
+
+@media screen and (max-width:670px){
+
+	#arrow{
+		margin-left:115px;
+		margin-right:100px;
+
+	}
+	#brazil{
+			
+		margin-left:0px;
+	}
+	#uk{
+			
+		margin-top:0px;
+
+	}
+	
+	#spec_icon{
+		
+		float:none;
+	}
+
+}
+	
+@media screen and (max-width:600px){
+
+	#arrow{
+		margin-left:50px;
+		margin-right:100px;
+
+	}
+	#brazil{
+			
+			margin-left:0px;
+	}
+	#uk{
+			
+		margin-top:0px;
+
+	}
+	#email{
+		font-size:12px;
+	}
+	
+	#clipart2{
+		float:left;
+		margin-top:-65px; 
+		margin-left:0px; 
+		width:65px; 
+		height:50px;
+	}
+
+}
+	
+@media screen and (max-width:500px){
+		.box1{
+
+				margin-left:25px; 
+				margin-right:55px;
+				margin-bottom:40px;
+				margin-top:15px;
+		}
+		.codrops-top span.right{margin-right:65px;}
+		#brazil{
+			
+			margin-left:0px;
+		}
+		#uk{
+			
+			margin-top:0px;
+
+		}
+		#arrow{
+			margin-left:10px;
+			margin-right:10px;
+
+		}
+		#clipart{
+			width:76px;
+		}
+		#clipart2{
+			float:right;
+		}
+
+}
+
