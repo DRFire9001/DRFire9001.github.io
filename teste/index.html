@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width= device-width, initial-scale= 1"/>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href='http://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
+	<meta name="description" content="Anne Beauty, o lugar ideal para quem quer Unhas em Gel em Uberlândia. Ótimos preços, profissionais qualificados e produtos de qualidade. Agende seu horário!" />
+	<title>Anne Beauty Estética</title>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAajdG0aYGP7C50kwM_DtkbRWa9PvRAwAg&callback=initMap"></script> <!--Google Maps script-->
+	<script> <!-- Google Maps javaScript-->
+		function initialize(){
+			var myLatlng = new google.maps.LatLng(-18.910208, -48.269587);
+			var mapOptions = {zoom: 17,center: myLatlng}
+			var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title: 'Anne Beauty Estética - localização'
+			});
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<style>
+		#map-canvas{
+			min-width:430px;
+			min-height:290px;
+			max-width: 100%;
+			border-style: dashed;
+			border-width: 1px;
+		}
+		@media screen and (max-width: 1000px) {	
+			#map-canvas{
+				min-width:300px;
+			}
+		}
+	</style>
+</head>
+
+<body background="bgd.jpg" class="page">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class ="container">
+
+
+	<header>
+                <!-- <h1> Tradução & Correção</h1> -->
+				<h2>Anne Beauty Estética</h2>
+	</header>
+	<div class="content">
+	
+		<!-- menu bar -->
+		<div class="codrops-top"> 
+		   <!-- <span class="left">
+				   <a href="#home">
+						&laquo; Kallan Sipple 
+					</a>
+				</span> -->
+				<span class="right">
+					<a href="#services"> Serviços</a>
+					<a href="#locale" style="font-size:18px;">Localização</a>
+					<a href="#contact" style="font-size:20px;">Contato</a>
+					<a href="galeria.html" style="font-size:20px;"><strong>Galeria</strong></a>
+				</span>
+					<div class="clr"></div>
+		</div>
+		
+<!-- 		<div>
+			<div style="margin-top:100px;" class="fb-page" data-href="https://www.facebook.com/AnneBeautyEstetica/" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/AnneBeautyEstetica/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AnneBeautyEstetica/">Anne Beauty</a></blockquote></div>
+		</div> -->
+		<br/>
+		<div id="logo">
+			<img style="height:250px;" src="images/logo.png" alt="Logo"/>
+		</div>
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		 
+		<div class="box1">
+		
+			<!-- <h3 id="home"> Introdução </h3> -->
+			<p> Anne Beauty: estética corporal e facial com especialização em alongamentos de unhas, além de cursos preparatórios na área de estética da unha. Oferecemos uma variedade de serviços, além de ótimos preços, profissionais qualificados e produtos de qualidade.</p> 
+			<p> Melhor lugar para Unhas em Gel em Uberlândia e região! </p>
+
+		</div>
+
+		<div class="box1">
+		
+			<h3 id="services"> Serviços </h3>
+			</br></br>
+			<p> Oferecemos os seguintes serviços: </p>
+			
+			<br/><br/>
+			
+			<div class = "servicebox"> 
+				<h1> Alongamentos de Unha </h1>
+				<p> ~ <a href="unhas-em-gel.html"> Unhas em Gel </a></p>
+				<p> ~ Acrilfix </p>
+				<p> ~ Decoradas </p>
+				<p> ~ Glass Effect </p>
+			</div>
+			
+			<div class = "servicebox">
+				<h1> Estética Facial &nbsp;<br/>& Corporal </h1>
+				<p> ~ Alongamento de Cíclios </p>
+				<p> ~ Cabeleleiro </p>
+				<p> ~ <a href="#"> Manicure & Pedicure </a></p>
+			</div>
+			
+			<div class = "servicebox" style= "max-width:215px; ">
+				<h1> Cursos </h1>
+				<p> ~ <a href="cursos.html"> Curso Anne Beauty de Unhas em Gel </a></p>
+			</div>
+
+		</div>
+		
+		<div class="box1">
+			
+			<h3 id="locale"> Localização </h3> 
+			<div id="servicebox" style="margin-right: 25px; text-align:left; float:left;">
+				<p> Nos localizamos no endereço abaixo: </p>
+				<br/>
+				<p style="text-align:left;"> &nbsp;&nbsp; Avenida Floriano Peixoto, 1708 </p>
+				<p style="text-align:left;"> &nbsp;&nbsp; Bairro Aparecida </p>
+				<p style="text-align:left;"> &nbsp;&nbsp; Uberlândia </p>
+			</div>
+			
+			<div id="servicebox" style="text-align:left; float:left; margin-top: 20px;margin-left:35px;">
+				<div id="map-canvas"></div>
+			</div>
+			
+			<!-- <a href="#"><img id="uk" src="images/backtotop.png" style=" height:32px; margin-top:0px; float: right;" alt="back to top" /></a> -->
+		</div>
+		
+		<div class="box1">
+			
+			<h3 id="contact"> Contato </h3>
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+			<div>
+				<p style="text-align:left;"> Opções de contato se encontram abaixo: </p> 
+				<div id="spec_icon"> <p id="email" style="text-align:left;" > <img id="icon_image" src="images/face.png" alt="Facebook:"/> &nbsp <a href="http://facebook.com/AnneBeautyEstetica">/AnneBeautyEstetica</a></p></div>
+				<div id="icons_div"> <p id="email" style="text-align:left;"> <img id="icon_image" src="images/insta.png" alt="Instagram:"/> &nbsp <a href="https://www.instagram.com/annebeautynails/">/AnneBeautyNails</a></p></div>
+			</div>
+			<br/>
+			<div>
+				<p style="text-align:left;"> Para Agendamento ou Informações sobre <b>Unhas em Gel</b>: </p>
+				<!-- <div id="spec_icon"> <p style="text-align:left;"> <img id="icon_image" src="images/phone.png" alt="Telefone:"/> &nbsp (34) 9 XXXX-XXXX</p></div> -->
+				<div id="icons_div"> <p style="text-align:left;"> <img id="icon_image" style="width:116px;" src="images/pw.png" alt="WhatsApp:"/> &nbsp (34) 9 XXXX-XXXX (c/ Vannessa)</p></div>
+			</div>
+			<br/>
+			<div>
+				<p style="text-align:left;"> Para Agendamento ou Informações sobre <b> Cursos</b>: </p>
+				<!-- <div id="spec_icon"> <p style="text-align:left;"> <img id="icon_image" src="images/phone.png" alt="Telefone:"/> </p></div> -->
+				<div id="icons_div"> <p style="text-align:left;"> <img id="icon_image" style="width:116px;" src="images/pw.png" alt="WhatsApp:"/> &nbsp (34) 9 9258-2291 (c/ Anne)</p></div>
+			</div>
+			<a href="#"><img id="uk" src="images/backtotop.png" style=" height:32px; margin-top:0px; float: right;" alt="back to top" /></a>
+
+			
+		</div>
+	
+	</div>
+	
+	<footer class="footer">
+		<p style="text-align:center;">Anne Beauty Estética, 2018</p>
+		<!-- <p>CNPJ: 0001-xxx.xxx.xxx.000</p> -->
+		<p> <a href='https://www.freepik.es/vector-gratis/conjunto-de-iconos-modernos-acuarela-redes-sociales_1930254.htm#index=15'>Vector de Logo creado por Harryarts</a> </p> 
+		<p style="text-align:center;"> Site made by <i><a href="http://www.kallansipple.com"> Kallan Sipple </a></i> </p>
+	</footer>
+</div>
+
+</body>
